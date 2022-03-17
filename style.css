@@ -1,204 +1,103 @@
-#calculator {
-	margin-left: 0.208333333in;
-}
-#display,
-[class~='row'],
-[class~='button'],
-body {
-	display: flex;
-}
-#calculator {
-	margin-bottom: 0.208333333in;
-}
-#calculator {
-	margin-right: 0.208333333in;
-}
-#calculator {
-	margin-top: 0.208333333in;
-}
-#display,
-[class~='row'] {
-	justify-content: flex-end;
-}
-[class~='button'] {
-	background-color: #fff;
-}
-#calculator {
-	max-width: 25pc;
-}
-#calculator {
-	background-color: #967c6d;
-}
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
-[class~='button'],
-#calculator {
-	width: 100%;
-}
-[class~='button'],
-html,
-body {
+
+html{
 	height: 100%;
 }
-#calculator {
-	padding-left: 15pt;
-}
-#calculator {
-	padding-bottom: 15pt;
-}
-#calculator {
-	padding-right: 15pt;
-}
-[class~='button'] {
-	font-size: 24px;
-}
-[class~='button'] {
-	font-weight: 700;
-}
-html,
-body {
+
+body{
 	margin-left: 0;
-}
-[class~='button'] {
-	color: #d74742;
-}
-#calculator {
-	padding-top: 15pt;
-}
-[class~='button'] {
-	justify-content: center;
-}
-#calculator {
-	border-radius: 7.5pt;
-}
-html,
-body {
 	margin-bottom: 0;
-}
-#display {
-	margin-left: 0.625pc;
-}
-#display,
-[class~='button'],
-body {
-	align-items: center;
-}
-#display {
-	margin-bottom: 0.625pc;
-}
-#display,
-[class~='button'] {
-	border-radius: 0.052083333in;
-}
-[class~='button'] {
-	border-left-width: medium;
-}
-[class~='button'] {
-	border-bottom-width: medium;
-}
-html,
-body {
-	margin-right: 0;
-}
-[class~='button'] {
-	border-right-width: medium;
-}
-#display {
-	margin-right: 0.625pc;
-}
-#display {
-	margin-top: 0.625pc;
-}
-body,
-html {
-	margin-top: 0;
-}
-[class~='button'] {
-	border-top-width: medium;
-}
-[class~='button'] {
-	border-left-style: none;
-}
-[class~='button'] {
-	border-bottom-style: none;
-}
-[class~='button-wrapper'],
-#display {
-	padding-left: 0.625pc;
-}
-#display,
-[class~='button-wrapper'] {
-	padding-bottom: 0.625pc;
-}
-body {
-	background-color: #29262c;
-}
-#display,
-[class~='button-wrapper'] {
-	padding-right: 0.625pc;
-}
-[class~='button'] {
-	border-right-style: none;
-}
-[class~='button'] {
-	border-top-style: none;
-}
-[class~='button'] {
-	border-left-color: currentColor;
-}
-body {
-	font-family: 'Dosis', sans-serif;
-}
-[class~='button'] {
-	border-bottom-color: currentColor;
-}
-[class~='button'] {
-	border-right-color: currentColor;
-}
-[class~='button-wrapper'],
-#display {
-	padding-top: 0.625pc;
-}
-[class~='button'] {
-	border-top-color: currentColor;
-}
-[class~='button'] {
-	border-image: none;
-}
-#display {
-	height: 2.5pc;
-}
-#display,
-[class~='clear'],
-.equal {
-	color: white;
-}
-[class~='button-wrapper'] {
-	flex-basis: 25%;
-}
-#display {
-	letter-spacing: 0.125pc;
-}
-body {
-	font-size: 24px;
-}
-#display {
-	background-color: #382325;
-}
-body {
-	font-weight: 700;
-}
-body {
+	Background-color: #29262c;
+	height:100%;
 	justify-content: center;
+	display: flex;
 }
-[class~='button-wrapper'] {
+
+.row {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#calculator {
+	margin-left: 0.208333333in;
+	margin-bottom: 0.208333333in;
+	margin-right: 0.208333333in;
+	margin-top: 0.208333333in;
+	max-width: 400px;
+	width: 100%;
+	height: 100%;
+	max-height: 400px;
+	background-color: #967c6d;
+	border-radius: 8px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#calculator > #display{
+	background-color: #382325;
+	border-radius: 5px;
+	max-width:340px;
+	max-height:45px;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 19px;
+	margin-left: 30px;
+	margin-top: 28px;
+	width: 100%;
+	height: 100%;
+	font-weight: 1000;
+	text-align: right;
+	font-size: 30px;
+	color: #fff;
+	font-family: Poppins, sans-serif;
+}
+
+.button {
+	font-family: Poppins, sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	color: #d74742;
+	max-height: 40px;
+	max-width: 70px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius:4px;
+	padding: 1px 6px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s;
+}
+
+.button:hover{
+	width:75px;
+	-moz-box-shadow: 0 0 10px rgb(251, 255, 0);
+	-webkit-box-shadow: 0 0 10px rgb(251, 255, 0);
+	box-shadow: 0px 0px 10px rgb(251, 255, 0);       /* outer right cyan */
+}
+
+.button:active {
+	background-color: #cccfb9;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+
+.button-wrapper{
+	padding: 10px;
+	flex-basis: 25%;
 	height: 3.75pc;
+	top: 100px;
+	margin-left: 5px;
 }
-[class~='clear'],
-.equal {
+
+.clear, .equal{
 	background-color: #923532;
-}
-[class~='del'] {
-	font-size: 1pc;
+	color: #fff;
 }
