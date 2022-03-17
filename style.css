@@ -15,6 +15,11 @@ body{
 	height:100%;
 	justify-content: center;
 	display: flex;
+	background-image: url('https://external-preview.redd.it/nwHxgDMv0AOIIM_GhqoPCYSUg2x2VWkVA8w59NlhAoY.jpg?auto=webp&s=b27c32dbca994d529ba98a368a1f40899aa91240');
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-position: center bottom;
 }
 
 .row {
@@ -36,7 +41,15 @@ body{
 	position: fixed;
 	top: 50%;
 	left: 50%;
+	background-image: url(./bgcalc.gif);
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+	background-position: bottom ;
 	transform: translate(-50%, -50%);
+	-webkit-box-shadow:0px 0px 28px 3px rgba(45,255,196,0.71);
+	-moz-box-shadow: 0px 0px 28px 3px rgba(45,255,196,0.71);
+	box-shadow: 0px 0px 28px 3px rgba(45,255,196,0.71);
 }
 
 #calculator > #display{
@@ -54,8 +67,31 @@ body{
 	font-weight: 1000;
 	text-align: right;
 	font-size: 30px;
-	color: #fff;
+	color: rgb(235, 218, 72);
+	background-image: url(gra.webp);
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-position: center bottom;
 	font-family: Poppins, sans-serif;
+}
+
+h1{
+	 position:relative;
+	 position:relative;
+	 font-size:35px;
+	 letter-spacing: 5px;
+	 color:#7585dd ;
+	 text-transform:uppercase;
+	   text-align:center;
+   
+	 width:100%;
+	text-shadow:0 0 10px #6a61e6,
+	   0 0 10px #3b3b3b,
+	   0 0 40px #424242,
+	   0 0 80px #3f3f3f,
+	   0 0 160px #777777;
+	   font-weight: 700;
 }
 
 .button {
@@ -74,13 +110,17 @@ body{
 	display: flex;
 	align-items: center;
 	transition: all 0.3s;
+	background-color: rgba(216, 211, 187, 0.644);
 }
 
 .button:hover{
-	width:75px;
+	max-width: 101%;
+	max-height: 101%;
+	height:42px;
+	width:72px;
 	-moz-box-shadow: 0 0 10px rgb(251, 255, 0);
 	-webkit-box-shadow: 0 0 10px rgb(251, 255, 0);
-	box-shadow: 0px 0px 10px rgb(251, 255, 0);       /* outer right cyan */
+	box-shadow: 0px 0px 10px rgb(187, 255, 0);
 }
 
 .button:active {
@@ -101,3 +141,18 @@ body{
 	background-color: #923532;
 	color: #fff;
 }
+
+.sike3{
+	position:absolute;
+	right:0;
+	bottom:30px;
+	margin-right:50px;
+	margin-top:200px;
+  }
+
+  .sike{
+	position:absolute;
+	left:40px;
+	margin-left:100px;
+	bottom:30px;
+  }
